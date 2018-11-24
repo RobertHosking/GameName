@@ -1,7 +1,11 @@
-function setup() {
+var player;
 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  player = new Player();
 }
 
 function draw() {
-  ellipse(50, 50, 80, 80);
+  clear();
+  player.render();
 }
