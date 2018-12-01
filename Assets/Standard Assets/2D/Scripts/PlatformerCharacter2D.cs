@@ -42,7 +42,6 @@ namespace UnityStandardAssets._2D
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
             }
-
             m_Anim.SetBool("Ground", m_Grounded);
 
             // Set the vertical animation
@@ -80,7 +79,6 @@ namespace UnityStandardAssets._2D
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !m_FacingRight)
                 {
-                    Debug.Log("Moving!!!");
                     // ... flip the player.
                     Flip();
                 }
